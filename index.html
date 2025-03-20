@@ -11,43 +11,167 @@
     <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="main">
+    <div class="main">
+      <header>
+        <!-- nav bar -->
         <nav>
-          <h2>Logo</h2>
-          <div class="nav2">
-            <h4>Home</h4>
-            <h4>Menu</h4>
-            <h4>About</h4>
-            <h4>Contact</h4>
-            <h4>feedback</h4>
-            <button>Sign In</button>
-            <i class="ri-menu-3-fill"></i>
-          </div>
-        </nav>
+          <div class="logo">
+            <img src="assets/images/rounf-logo.jpg" />
+            <div class="sidelogo">
+              <h2>Tea<span>4</span>You</h2>
 
-        <div class="content">
-          <div class="left">
-            <h1>
-              Learn From the <span>coolest</span> coding platform in India.
-            </h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-              odio officiis obcaecati ut? Eligendi odit, perferendis omnis
-              debitis sit doloribus. Sunt, dolorum illum temporibus eligendi nam
-              minus voluptatem rerum magnam?
-            </p>
-            <button> Explore Now</button>
+              <p>taste of refreshment...</p>
+            </div>
           </div>
-          <div class="right">
-              <img src="assets/images/tea.jpg" >
+
+          <div class="nav2">
+            <i class="ri-home-4-line"></i>
+            <a href="index.html">Home</a>
+           <!-- <a href="gallery.html">Gallery</a>-->
+            <a href="contact.html">Contact</a>
+            <a href="#">Feedback</a>
+            <button>Sign In</button>
+          </div>
+          <!--added icon from remixicon-->
+          <i class="ri-menu-3-fill" id="mobile-menu"></i>
+        </nav>
+      </header>
+
+      <div class="content">
+        <div class="right">
+          <img id="heroImage" src="assets/images/1.jpg" />
+        </div>
+        <div class="left">
+          <div>
+            <h1>Tea, Conversations & <span>Endless</span> Vibes.</h1>
+
+            <p>
+              The world slows down with a cup of strong tea in one hand and a cigarette in the other.
+            </p>
+            <button>Explore Now</button>
+        </div>
+        <div class="teaillus">
+          <img src="assets/images/tea-illus.png" alt="">
+        </div>
+        <hr>
+
+            <div class="items">
+              <div class="menu-container">
+                  <div class="menu-item">
+                      <img src="assets/images/masala (2).png" alt="masala Tea">
+                      <h3>Masala Tea</h3>
+                      <p>₹10</p>
+                  </div>
+
+                  <div class="menu-item">
+                      <img src="assets/images/kullar.png" alt="special Tea">
+                      <h3>Special Tea</h3>
+                      <p>₹20</p>
+                  </div>
+
+                  <div class="menu-item">
+                      <img src="assets/images/classic.png" alt="Lemon Tea">
+                      <h3>Classic-Reg</h3>
+                      <p>₹35</p>
+                  </div>
+
+                  <div class="menu-item">
+                      <img src="assets/images/marlboro.png" alt="Black Tea">
+                      <h3>Marlboro-Adv</h3>
+                      <p>₹30</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="assets/images/black.png" alt="Lemon Tea">
+                    <h3>black</h3>
+                    <p>20</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="assets/images/win.png" alt="Black Tea">
+                    <h3>win</h3>
+                    <p>10</p>
+                </div>
+              </div>
+          </div>
+
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <section class="hero"></section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            Enjoy the finest teas from around the world, freshly brewed for a
+            delightful experience.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: Tea4you@gmail.com</p>
+          <p>Phone: +91 79790 19570</p>
+          <p id="Address">
+            Address: Kaveri Gas Agency Lane ,Near Sankat Mochan Mandir
+          </p>
+          <p>Malighat,Muzaffarpur 842001</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="https://www.instagram.com/tea4you.muz/?hl=en"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a href="#"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tea4You.in</p>
+      </div>
+    </footer>
 
-    <footer></footer>
+    <script>
+      const menuIcon = document.getElementById("mobile-menu");
+      const navMenu = document.querySelector(".nav2");
+
+      // random images
+      const images = [
+        "assets/images/1.jpg",
+        "assets/images/2.jpg",
+        "assets/images/3.jpg",
+        "assets/images/1.jpg",
+      ];
+      const heroImage = document.getElementById("heroImage");
+
+      function changeHeroImage() {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        heroImage.src = images[randomIndex];
+      }
+      setInterval(changeHeroImage, 2000);
+
+      //click menu toggle
+      menuIcon.addEventListener("click", function () {
+        document.querySelector(".nav2").classList.toggle("show-menu");
+      });
+      // Event listener for clicks outside the menu
+      document.addEventListener("click", function (event) {
+        if (
+          !navMenu.contains(event.target) &&
+          !menuIcon.contains(event.target)
+        ) {
+          navMenu.classList.remove("show-menu");
+        }
+      });
+    </script>
   </body>
 </html>
