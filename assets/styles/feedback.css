@@ -1,0 +1,54 @@
+.feedback-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+}
+.logo img {
+    width: 80px;  /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Make it round */
+}
+
+.feedback-container h2 {
+    margin-bottom: 10px;
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-container input,
+.feedback-container textarea,
+.feedback-container select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback-container button {
+    padding: 10px;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feedback-container button:hover {
+    background: #ff5722;
+}
+
+.nav2 a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.nav2 a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}

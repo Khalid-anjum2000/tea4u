@@ -29,8 +29,7 @@
             <a href="index.html">Home</a>
            <!-- <a href="gallery.html">Gallery</a>-->
             <a href="contact.html">Contact</a>
-            <a href="#">Feedback</a>
-            <button>Sign In</button>
+            <a href="feedback.html">Feedback</a>
           </div>
           <!--added icon from remixicon-->
           <i class="ri-menu-3-fill" id="mobile-menu"></i>
@@ -41,19 +40,65 @@
         <div class="right">
           <img id="heroImage" src="assets/images/1.jpg" />
         </div>
+
         <div class="left">
+         <div class="description">
           <div>
             <h1>Tea, Conversations & <span>Endless</span> Vibes.</h1>
 
             <p>
               The world slows down with a cup of strong tea in one hand and a cigarette in the other.
             </p>
+            <p>
+              At Tea4You, we bring you the finest blend of traditional and modern flavors, crafted with passion and care. Whether you need a quick refreshment or a deep conversation over a warm cup, we are here to serve.
+            </p>
+
+            <p>
+              Step into our cozy space, unwind, and let the essence of freshly brewed tea uplift your senses.
+            </p>
             <button>Explore Now</button>
         </div>
         <div class="teaillus">
           <img src="assets/images/tea-illus.png" alt="">
         </div>
-        <hr>
+
+        <div class="services">
+          <h2>Our Services</h2>
+          <div class="service-container">
+            <div class="service-item">
+              <i class="ri-cup-fill"></i>
+              <h3>Fresh Tea</h3>
+              <p>Enjoy a variety of handcrafted teas, made from the finest ingredients.</p>
+            </div>
+
+            <div class="service-item">
+              <i class="ri-restaurant-line"></i>
+              <h3>Tea & Snacks</h3>
+              <p>Pair your favorite tea with our delicious snacks for the perfect experience.</p>
+            </div>
+
+            <div class="service-item">
+              <i class="ri-store-fill"></i>
+              <h3>Takeaway & Delivery</h3>
+              <p>Order your favorite tea and enjoy it at your convenience, anywhere you like.</p>
+            </div>
+
+            <div class="service-item">
+              <i class="ri-calendar-event-fill"></i>
+              <h3>Party & Marriage Orders</h3>
+              <p>We take bulk tea orders for weddings, parties, and special events.</p>
+            </div>
+
+            <div class="service-item">
+              <i class="ri-group-fill"></i>
+              <h3>Cozy Hangout Spot</h3>
+              <p>A warm, welcoming space for friends, work, or just peaceful tea time.</p>
+            </div>
+          </div>
+        </div>
+
+         </div>
+
 
             <div class="items">
               <div class="menu-container">
@@ -72,24 +117,24 @@
                   <div class="menu-item">
                       <img src="assets/images/classic.png" alt="Lemon Tea">
                       <h3>Classic-Reg</h3>
-                      <p>₹35</p>
+                      <p>₹20</p>
                   </div>
 
                   <div class="menu-item">
                       <img src="assets/images/marlboro.png" alt="Black Tea">
                       <h3>Marlboro-Adv</h3>
-                      <p>₹30</p>
+                      <p>₹20</p>
                   </div>
                   <div class="menu-item">
                     <img src="assets/images/black.png" alt="Lemon Tea">
                     <h3>black</h3>
-                    <p>20</p>
+                    <p>₹20</p>
                 </div>
 
                 <div class="menu-item">
                     <img src="assets/images/win.png" alt="Black Tea">
                     <h3>win</h3>
-                    <p>10</p>
+                    <p>₹15</p>
                 </div>
               </div>
           </div>
@@ -112,14 +157,15 @@
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
             <li><a href="#">Our Story</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">feedback</a></li>
+
           </ul>
         </div>
         <div class="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: Tea4you@gmail.com</p>
+          <p>Email: tea4you@gmail.com</p>
           <p>Phone: +91 79790 19570</p>
           <p id="Address">
             Address: Kaveri Gas Agency Lane ,Near Sankat Mochan Mandir
@@ -147,9 +193,12 @@
       // random images
       const images = [
         "assets/images/1.jpg",
-        "assets/images/2.jpg",
-        "assets/images/3.jpg",
+        "assets/images/1.1.jpg",
+        "assets/images/tea4ulogo.jpg",
+        "assets/images/2.2.jpg",
+        "assets/images/2.3.jpg",
         "assets/images/1.jpg",
+        "assets/images/2.1.jpg",
       ];
       const heroImage = document.getElementById("heroImage");
 
